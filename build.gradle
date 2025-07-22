@@ -1,17 +1,27 @@
 plugins {
+<<<<<<< HEAD
 	id 'java'
 	id 'org.springframework.boot' version '3.5.3'
 	id 'io.spring.dependency-management' version '1.1.7'
+=======
+	id 'org.springframework.boot' version '2.4.4'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+>>>>>>> c0fff78527f254ed927cf0c3ccdabb4740901da6
 }
 
 group = 'hello'
 version = '0.0.1-SNAPSHOT'
+<<<<<<< HEAD
 
 java {
 	toolchain {
 		languageVersion = JavaLanguageVersion.of(21)
 	}
 }
+=======
+sourceCompatibility = '11'
+>>>>>>> c0fff78527f254ed927cf0c3ccdabb4740901da6
 
 configurations {
 	compileOnly {
@@ -26,6 +36,7 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+<<<<<<< HEAD
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
@@ -33,5 +44,14 @@ dependencies {
 }
 
 tasks.named('test') {
+=======
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+test {
+>>>>>>> c0fff78527f254ed927cf0c3ccdabb4740901da6
 	useJUnitPlatform()
 }
